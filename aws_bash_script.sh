@@ -13,3 +13,7 @@ service httpd start
 chkconfig httpd on
 cd /var/www/html
 git clone https://github.com/vikash018/aws/s3
+
+scp -i /Users/vikashkumarsingh/SSH/MyEC2KeyPair.pem *.py ec2-user@54.146.175.77:~
+
+cp -p /usr/local/bin/pip* /usr/bin/
